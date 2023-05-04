@@ -66,6 +66,7 @@ def select_window_by_name(memory_window_name):
             subprocess.run(["wmctrl", "-ia", str(current_window.id)])
 
 
+# todo toggle visibility when memory slot already allocated
 # todo check arg count
 memory_window_title = PREFIX + str(sys.argv[1])
 if window_already_present(memory_window_title):
